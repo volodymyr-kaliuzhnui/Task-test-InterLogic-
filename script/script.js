@@ -39,3 +39,33 @@ const swiper = new Swiper('.swiper', {
         }
     }
 });
+
+// mobile menu
+let mobileMenuBtn = document.getElementById('openMobileMenu');
+let navBlock = document.getElementById('navBlock');
+let closeMenuBtn = document.getElementById('closeMenu');
+let body = document.querySelector('body');
+
+ let openMenu = (event) => {
+     event.preventDefault();
+     navBlock.classList.add('animate__fadeInLeft');
+     navBlock.classList.remove('animate__fadeOutLeft');
+     setTimeout(()=> {
+         body.style.overflow = 'hidden'
+     },500)
+     mobileMenuBtn.removeEventListener('click', openMenu);
+     closeMenuBtn.addEventListener('click', closeMenu);
+}
+
+mobileMenuBtn.addEventListener('click', openMenu);
+
+let closeMenu = (event) => {
+    event.preventDefault();
+    navBlock.classList.remove('animate__fadeInLeft');
+    navBlock.classList.add('animate__fadeOutLeft');
+    setTimeout(()=> {
+        body.style.overflow = 'auto'
+    },200)
+    mobileMenuBtn.addEventListener('click', openMenu);
+    closeMenuBtn.removeEventListener('click', closeMenu);
+}

@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="./styles/css/style.css">
     <title>BB</title>
 </head>
@@ -15,9 +16,11 @@
 <!--header-->
 <header>
     <div class="header_benefits">
-        <p class="benefit"><strong>Hurtig levering 1–3 dage</strong></p>
-        <p class="benefit"><strong>14 dage retur</strong></p>
-        <p class="benefit"><strong>Frifragt over 500,-</strong></p>
+        <div class="wrapper">
+            <p class="benefit"><strong>Hurtig levering 1–3 dage</strong></p>
+            <p class="benefit"><strong>14 dage retur</strong></p>
+            <p class="benefit"><strong>Frifragt over 500,-</strong></p>
+        </div>
     </div>
     <div class="container basket_logo_wrapper">
         <div class="header_logo_basket">
@@ -25,6 +28,9 @@
                 <a href="#"><img src="./images/header/logo.png" alt="logo"></a>
             </div>
             <div class="basket_wrapper">
+                <button class="menu_open_btn" id="openMobileMenu">
+                    <span></span>
+                </button>
                 <div class="search">
                     <label for="search">
                         <input type="text" placeholder="SØG" id="search">
@@ -38,7 +44,7 @@
         </div>
     </div>
     <div class="container">
-        <nav class="navigation">
+        <nav class="navigation animate__animated" id="navBlock">
             <ul>
                 <li><a href="#" class="nav_item">Ringe</a><span></span></li>
                 <li><a href="#" class="nav_item">Øreringe<span></span></a></li>
@@ -48,6 +54,7 @@
                 <li><a href="#" class="nav_item">Outlet<span></span></a></li>
                 <li><a href="#" class="nav_item">Gavekort<span></span></a></li>
             </ul>
+            <button id="closeMenu" class="close_menu_btn"></button>
         </nav>
     </div>
 </header>
@@ -162,7 +169,7 @@
                     <h6 class="category_name">UNIK</h6>
                 </a>
                 <div class="category_desc_block">
-                    <div class="category_text">
+                    <div class="category_text_block">
                         <h5 class="category_title">OM MIG</h5>
                         <p class="category_text">Lorem ipsum dolor sit amet adiipcing isi vitae.
                             Id leo in vitae turpis massa sed. Purus faucibus
@@ -268,11 +275,13 @@
                 <div class="logo_wrapper">
                     <a href="#"><img src="./images/footer/trustpilot_logo.png" alt="trust logo"></a>
                 </div>
-                <span class="star"><img src="./images/footer/star.png" alt="star"></span>
-                <span class="star"><img src="./images/footer/star.png" alt="star"></span>
-                <span class="star"><img src="./images/footer/star.png" alt="star"></span>
-                <span class="star"><img src="./images/footer/star.png" alt="star"></span>
-                <span class="star"><img src="./images/footer/star.png" alt="star"></span>
+                <div class="stars">
+                    <span class="star"><img src="./images/footer/star.png" alt="star"></span>
+                    <span class="star"><img src="./images/footer/star.png" alt="star"></span>
+                    <span class="star"><img src="./images/footer/star.png" alt="star"></span>
+                    <span class="star"><img src="./images/footer/star.png" alt="star"></span>
+                    <span class="star"><img src="./images/footer/star.png" alt="star"></span>
+                </div>
             </div>
         </div>
     </div>
