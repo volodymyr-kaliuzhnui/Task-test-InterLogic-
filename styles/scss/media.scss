@@ -157,6 +157,9 @@
           justify-content: center;
           align-items: center;
           height: 100%;
+          li {
+            margin-bottom: 20px;
+          }
         }
 
         .close_menu_btn {
@@ -168,7 +171,7 @@
           border: none;
           outline: none;
           background: none;
-          padding: 20px 10px;
+          padding: 20px 15px;
           cursor: pointer;
 
           &:after, &:before {
@@ -176,7 +179,7 @@
             position: absolute;
             width: 30px;
             height: 2px;
-            top: 0;
+            top: 19px;
             right: 0;
             background: black;
           }
@@ -240,9 +243,16 @@
       margin-bottom: 40px;
 
       .container {
+        flex-direction: column;
+        .left_colum {
+          margin-bottom: 20px;
+        }
         .right_colum, .left_colum {
+          max-width: 100%;
+          margin-right: 0;
           .category_item {
             margin-bottom: 20px;
+            max-width: 100%;
 
             .category_name {
               font-size: 25px;
@@ -254,6 +264,7 @@
           .category_desc_block {
             margin-top: 20px;
             padding: 10px;
+            flex-direction: inherit;
 
             .category_text {
               margin-bottom: 15px;
@@ -301,10 +312,50 @@
         }
       }
     }
+    .payments {
+      flex-wrap: wrap;
+    }
   }
 }
 
 @media (max-width: 575px) {
+  main {
+    section.banner {
+      .banner_desc {
+        max-width: 303px;
+        .banner_title {
+          font-size: 50px;
+          line-height: 60px;
+        }
+      }
+    }
+    section.shop_examples {
+      .container {
+        .shop_title {
+          font-size: 25px;
+        }
+      }
+    }
+    section.nyheder {
+      .container {
+        .nyheder_title {
+          font-size: 25px;
+        }
+      }
+    }
+    section.categories {
+      .container {
+        .right_colum {
+          .category_desc_block {
+            flex-direction: column;
+            .category_text {
+              max-width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
   footer {
     ul {
       list-style: none;
