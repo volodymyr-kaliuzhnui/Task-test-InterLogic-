@@ -8,21 +8,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./styles/css/animate.css">
     <link rel="stylesheet" href="./styles/css/style.css">
     <title>BB</title>
 </head>
 <body>
 <!--header-->
 <header>
-    <div class="header_benefits">
+    <div class="header_benefits wow fadeIn">
         <div class="wrapper">
             <p class="benefit"><strong>Hurtig levering 1–3 dage</strong></p>
             <p class="benefit"><strong>14 dage retur</strong></p>
             <p class="benefit"><strong>Frifragt over 500,-</strong></p>
         </div>
     </div>
-    <div class="container basket_logo_wrapper">
+    <div class="container basket_logo_wrapper wow fadeInDown">
         <div class="header_logo_basket">
             <div class="logo_wrapper">
                 <a href="#"><img src="./images/header/logo.png" alt="logo"></a>
@@ -43,7 +43,7 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container wow fadeInRightBig">
         <nav class="navigation animate__animated" id="navBlock">
             <ul>
                 <li><a href="#" class="nav_item">Ringe</a><span></span></li>
@@ -61,7 +61,7 @@
 <!--header end-->
 <!--main-->
 <main>
-    <section class="banner">
+    <section class="banner wow fadeInLeftBig">
         <div class="banner_wrapper">
             <img src="./images/main/banner.png" alt="banner">
         </div>
@@ -70,7 +70,7 @@
             <button class="banner_btn">Læs mere</button>
         </div>
     </section>
-    <section class="nyheder">
+    <section class="nyheder wow wow fadeInRight">
         <div class="container">
             <h2 class="nyheder_title">nyheder</h2>
             <!-- Slider main container -->
@@ -143,7 +143,7 @@
             </div>
         </div>
     </section>
-    <section class="categories">
+    <section class="categories wow fadeIn">
         <div class="container">
             <div class="left_colum">
                 <a href="#" class="category_item">
@@ -190,8 +190,8 @@
     </section>
     <section class="shop_examples">
         <div class="container">
-            <h2 class="shop_title">#birgittebonnerup</h2>
-            <div class="shop_list">
+            <h2 class="shop_title wow fadeInRightBig">#birgittebonnerup</h2>
+            <div class="shop_list wow fadeInLeftBig">
                 <a href="#" class="main_shop_item">
                     <img src="./images/main/shop/main_shop_img.png" alt="photo">
                 </a>
@@ -222,7 +222,7 @@
 <!--main end-->
 <!--footer-->
 <footer>
-    <div class="pink_wrapper">
+    <div class="pink_wrapper wow fadeIn">
         <div class="container">
             <div class="contacts">
                 <h6 class="footer_title">KONTAKT</h6>
@@ -285,7 +285,7 @@
             </div>
         </div>
     </div>
-    <div class="payments">
+    <div class="payments wow fadeIn">
         <a href="#"><img src="./images/footer/payments/payment_1.png" alt="pay card image"></a>
         <a href="#"><img src="./images/footer/payments/payment_2.png" alt="pay card image"></a>
         <a href="#"><img src="./images/footer/payments/payment_3.png" alt="pay card image"></a>
@@ -301,6 +301,7 @@
 
 <!--scripts-->
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="./script/wow.min.js"></script>
 <script src="script/script.js"></script>
 
 </body>
